@@ -1,2 +1,2 @@
-# EssenzArduino
+# NespressArduino
 Connected Coffee Machine
