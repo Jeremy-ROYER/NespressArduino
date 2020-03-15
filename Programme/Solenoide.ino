@@ -17,20 +17,20 @@ void setup() {
   BT.begin(9600);    
 }
 void loop() {
-  //if(BT.available()) {
-    //DATA=BT.read();
-    //if (DATA=='P'){
+  if(BT.available()) {
+    DATA=BT.read();
+    if (DATA=='P'){
       digitalWrite(solenoidePetit, HIGH);   // Active le solenoide
       delay(500);               
       digitalWrite(solenoidePetit, LOW);    // Relache
       delay(1000);
-    //}
+    }
 
-    //if (DATA=='G'){
+    if (DATA=='G'){
       digitalWrite(solenoideGrand, HIGH);   // Active le solenoide
       delay(500);               
       digitalWrite(solenoideGrand, LOW);    // Relache
       delay(1000);
-    //}
-  //} 
+    }
+  } 
 }
